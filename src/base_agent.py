@@ -8,11 +8,11 @@ class BaseAgent:
     def __init__(self, system_prompt: str):
         self.system_prompt = system_prompt
 
-    def run(self,task: str, context:dict)
+    def run(self,task: str, context:dict):
         messages = [
             {"role":"system","content":self.system_prompt},
             {
-                "role":"user"
+                "role":"user",
                 "content":f"""Task:{task}
                  Context:{context}
             """
