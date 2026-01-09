@@ -29,3 +29,22 @@ class GalaxonOrchestrator:
             task="Identify main competitors and archetypes."
             context=shared_context
         )
+        shared_context +=f"\nCompetitors:\n{competitors}\n"
+
+        oppurtunity = oppurtunity_agent.run(
+            task="Identify the main oppurtunity zone.",
+            context=shared_context
+        )
+
+        blindspots= blindspot_agent.run(
+            task="List blind spots and missing elements.",
+            context=shared_context
+        )
+
+        return {
+            "clarified_idea": clarified,
+            "industry": industry,
+            "competitors": competitors,
+            "oppurtunity": oppurtunity,
+            "bling_spots": blindspots
+        }
