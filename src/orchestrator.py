@@ -17,3 +17,15 @@ class GalaxonOrchestrator:
             task="Clarify and structure this idea.",
             context=user_idea
         )
+        shared_context +=f"\nClarified Idea:\n{clarified}\n"
+
+        industry = industry_agent.run(
+            task="Identify the industry and key forces.",
+            context=shared_context
+        )
+        shared_context += f"\Clarified Idea:\n{clarified}\n"
+
+        competitors = competitor_agent.run(
+            task="Identify main competitors and archetypes."
+            context=shared_context
+        )
