@@ -4,4 +4,9 @@ Part of Study for the background of My Final Project for Constructor Academy's A
 
 The goal of this exercise, is to create Agentic AI Chatbots, without using the LangChain package.
 
+# What this Project does
 
+-Takes a short business idea as input
+-Uses multiple AI agents, each with a specific role
+-Produces structured business insights
+-Displays results in a simple dashboard
