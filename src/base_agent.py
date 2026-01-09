@@ -23,7 +23,7 @@ class BaseAgent:
             model="gpt-4o-mini",
             messages=messages
         )
-
+#possible error with deprecated Open AI API call here
         return response.choices[0].message.content
 
 
