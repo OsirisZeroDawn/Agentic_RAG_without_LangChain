@@ -10,9 +10,9 @@ class IdeaInput(BaseModel):
     idea: str
 
 
-    @app.post("/analyze")
-    def analyze (input: IdeaInput):
-        return orchestrator.run(input.ideas)
+@app.post("/analyze")
+def analyze (input: IdeaInput):
+        return orchestrator.run(input.idea)
 
 """
 Sub-Tasks Definition
