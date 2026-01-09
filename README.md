@@ -11,7 +11,7 @@ The goal of this exercise, is to create Agentic AI Chatbots, without using the L
 -Produces structured business insights
 -Displays results in a simple dashboard
 
-# Requirements to Run Locally
+## Requirements to Run Locally
 
 In terminal
 ```
