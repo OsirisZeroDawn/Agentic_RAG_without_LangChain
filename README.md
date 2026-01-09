@@ -14,6 +14,7 @@ The goal of this exercise, is to create Agentic AI Chatbots, without using the L
 # Requirements to Run Locally
 
 In terminal
+```
 pip install -r requirements.txt
 create .env file and use open ai api key
 uvicorn main:app --reload
